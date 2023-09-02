@@ -231,7 +231,6 @@ class Mastodon {
                 callback(null, body, response)
             })
 
-
             request.on('error', (err) => {
                 // transport-level error occurred - likely a socket error
                 if (mastodonOptions.retry
